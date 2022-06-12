@@ -1,0 +1,91 @@
+{
+  "data": [
+    {
+      "title": "Projects",
+      "projects": [
+        {
+          "name": "portfolio",
+          "desc": "A simple portfolio made using HTML, CSS, JavaScript.",
+          "link": "https://greeshma-portfolio.netlify.app/",
+          "source": "https://github.com/Greeshma2903/Portfolio"
+        },
+        {
+          "name": "links card",
+          "desc": "One place to store all my Social Links: Links Card. (Practice Project)",
+          "link": "https://greeshma2903.github.io/links-card/",
+          "source": "https://github.com/Greeshma2903/links-card"
+        },
+        {
+          "name": "eddie landing page",
+          "desc": "A Simple Landing page for a Company. This site was created as a submission to a DevChallenges challenge.",
+          "link": "https://edie-home-page-ivory.vercel.app/",
+          "source": "https://github.com/Greeshma2903/Dev-Challenges/tree/main/edie-homepage-master#edie-homepage"
+        },
+        {
+          "name": "one stop cs",
+          "desc": "A HackNITR Submission. A Team effort to build a Web Solution where we provide a collection of resources for learners.",
+          "link": "https://onestopcs.netlify.app/",
+          "source": "https://github.com/Greeshma2903/One-Stop-for-All"
+        },
+        {
+          "name": "tip calculator",
+          "desc": "A Simple Tip Calculator. This is a solution to the Tip calculator app challenge on Frontend Mentor.",
+          "link": "https://tip-calculator-app-opal.vercel.app/",
+          "source": "https://github.com/Greeshma2903/tip-calculator-app"
+        },
+        {
+          "name": "company team page",
+          "desc": "A page showing the Team members of a Company. This site was created as a submission to a DevChallenges challenge.",
+          "link": "https://my-team-page-tan.vercel.app/",
+          "source": "https://github.com/Greeshma2903/Dev-Challenges/tree/main/my-team-page-master#readme"
+        }
+      ],
+      "designs": [
+        {
+          "name": "one stop cs",
+          "desc": "Designed a static site for a hackathon project (HackNITR).",
+          "link": "https://www.figma.com/file/UVExAvyRgnyyGE1kzwWYnq/HackNITR?node-id=13%3A53"
+        },
+        {
+          "name": "web card",
+          "desc": "Simple WebCard, a Business Card for Developers.",
+          "link": "https://www.figma.com/file/veKAbn9Th7dkfN58GNZZGE/WebCard-Idea?node-id=0%3A1"
+        },
+        {
+          "name": "women's day posters",
+          "desc": "Poster designs for Women's Day using Canva and Illustrator",
+          "link": "https://www.canva.com/design/DAEXrfCCyyg/GXtexOsyKJ0OqPvvf_3Ubg/watch?utm_content=DAEXrfCCyyg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        },
+        {
+          "name": "technix brochure",
+          "desc": "Helped design the brochure for the annual technical fest at College.",
+          "link": "https://drive.google.com/file/d/1mQ5tomJla9sBDp28lFvUAfPGxoDDkkLM/view?usp=sharing"
+        },
+        {
+          "name": "carousel design",
+          "desc": "Carousel designed using Canva for Social Media.",
+          "link": "https://www.canva.com/design/DAEXxJpm1qo/yLSWOTwJF1-Pn0ZU5Ff0mA/view?utm_content=DAEXxJpm1qo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        },
+        {
+          "name": "simple illustrations",
+          "desc": "Simple Avatars designed usign Illustrator.",
+          "link": "https://github.com/Greeshma2903/Illustrations"
+        }
+      ],
+      "socials": [
+        {
+          "platform": "linkedin",
+          "link": "https://www.linkedin.com/in/m-greeshma/"
+        },
+        {
+          "platform": "twitter",
+          "link": "https://twitter.com/GreeshmaMedam"
+        },
+        {
+          "platform": "github",
+          "link": "https://github.com/Greeshma2903"
+        }
+      ]
+    }
+  ]
+}

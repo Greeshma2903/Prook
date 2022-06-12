@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prook</title>
+
+    <!-- stylesheets -->
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- scripts -->
+    <script defer src="./src/app.js"></script>
+  </head>
+
+  <body class="container mx-auto bg-neutral-900 text-slate-50 font-body">
+    <header
+      class="flex flex-col justify-center items-center md:flex-row md:w-full py-6 xl:py-10"
+    >
+      <div class="hamburger my-2 md:hidden">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </div>
+      <nav
+        class="my-2 hidden overflow-hidden transition duration-100 ease-in-out md:block md:w-full"
+      >
+        <ul
+          class="flex flex-col justify-center items-center tracking-widest space-y-6 md:space-y-0 md:flex-row md:space-x-5 lg:space-x-8"
+        >
+          <li
+            class="text-sm md:text-base hover:font-bold uppercase hover:text-yellow-200 transition ease-in-out duration-100"
+          >
+            <a href="#home">home</a>
+          </li>
+          <li
+            class="text-sm md:text-base hover:font-bold uppercase hover:text-yellow-200 transition ease-in-out duration-100"
+          >
+            <a href="#projects">projects</a>
+          </li>
+          <li
+            class="text-sm md:text-base hover:font-bold uppercase hover:text-yellow-200 transition ease-in-out duration-100"
+          >
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="relative h-screen mx-10 md:mx-28 lg:mx-44 xl:mx-52">
+      <img class="absolute -top-10 right-5 w-20 hidden lg:block" src="./src/images/shiningEffect.svg" alt=" ">
+      <section id="home" class="h-full flex flex-col justify-evenly items-center">  
+        <h2 class="text-3xl lg:text-5xl font-highlight flex justify-start items-center lg:self-start hover:scale-105 transition duration-105 linear">
+          Made by Greeshma<span
+           class="ml-3" ><img class="w-6" src="../src/images/lightning.svg" alt=" "
+          /></span>
+        </h2>
+        <h1 class="lg:w-8/12 text-4xl lg:text-6xl font-semibold uppercase text-center lg:text-right lg:self-end hover:scale-105 transition duration-105 linear">Welcome to my Projects Nook</h1>
+        <div class="scroll_container relative lg:self-start">
+          <div class="w-14 absolute -left-8 -top-6">
+            <img class="object-contain" src="./src/images/arrow.svg" alt=" ">
+          </div>
+          <p class="font-highlight text-lg lg:text-xl">scroll</p>
+        </div>
+      </section>
+      <section id="projects">
+        <article class="technical">
+          <!-- card --> 
+        </article>
+        <article class="designs">
+          <!-- card -->
+        </article>
+      </section>
+    </main>
+    <footer id="contact"
+      class="relative bottom-0 h-20 flex justify-between items-center mx-24 text-gray-500"
+    >
+      <p class="text-md">
+        <i class="fa-regular fa-copyright"></i> 2022 -
+        <a
+          class="underline hover:no-underline"
+          href="https://github.com/greeshma2903"
+          >Medam Greeshma</a
+        >
+      </p>
+      <div class="socials space-x-6">
+        <!-- replace with feather icons -->
+        <i
+          class="fa-brands fa-twitter hover:text-yellow-200 cursor-pointer text-3xl"
+        ></i>
+        <i
+          class="fa-brands fa-github hover:text-yellow-200 cursor-pointer text-3xl"
+        ></i>
+        <i
+          class="fa-brands fa-linkedin-in hover:text-yellow-200 cursor-pointer text-3xl"
+        ></i>
+      </div>
+    </footer>
+  </body>
+</html>
