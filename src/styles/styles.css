@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* scroll behavior */
+body, html {
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+}
+
+/* customize scroll bar */
 html::-webkit-scrollbar {
     width: 8px; 
  }

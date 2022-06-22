@@ -1,5 +1,12 @@
 "use strict";
 
+/**
+ * TODO:
+ * transitions
+ * scroll behaviour
+ *  sorting
+ */
+
 // NAVBAR =================================================
 const navbar = document.querySelector("nav");
 const hamburgerIcon = document.querySelector(".hamburger");
@@ -18,14 +25,11 @@ const techCardsContainer = document.querySelector(
 const designCardsContainer = document.querySelector(
   ".designs .cards_container"
 );
-console.log(designCardsContainer);
 const fetchProjects = async function () {
   const data = await fetch("./src/data.json");
   const jsonData = await data.json();
-  console.log(jsonData);
 
   const { designs, projects } = jsonData;
-  console.log(designs, projects);
   loadProjects(projects);
   loadDesigns(designs);
 };
@@ -158,4 +162,4 @@ const loadDesigns = function (designData) {
   );
 };
 
-window.onload(fetchProjects());
+window.addEventListener("DOMContentLoaded", fetchProjects);
