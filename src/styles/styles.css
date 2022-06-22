@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html::-webkit-scrollbar {
+    width: 8px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
+}
