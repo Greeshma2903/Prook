@@ -8,7 +8,7 @@
 /* scroll behavior */
 body, html {
   scroll-behavior: smooth;
-  scroll-padding: 1rem;
+  scroll-padding: 5rem;
 }
 
 /* customize scroll bar */
@@ -23,4 +23,13 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #4e4e4e;
   border-radius: 25px;
+}
+
+/* nav on scroll */
+header.scrollon {
+  @apply py-2 shadow-sm shadow-neutral-700 fixed bg-DarkBg;
+}
+
+main.scrollon {
+  @apply mt-20;
 }

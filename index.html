@@ -22,9 +22,9 @@
   <script defer src="./src/app.js"></script>
 </head>
 
-<body class="container mx-auto min-h-screen bg-neutral-900 text-slate-50 font-body">
+<body class="container mx-auto min-h-screen bg-DarkBg text-slate-50 font-body">
   <!-- == header == -->
-  <header class="flex flex-col justify-center items-center md:flex-row md:w-full py-6 xl:py-10">
+  <header class="flex flex-col justify-center items-center md:flex-row w-full py-6 xl:py-10 z-50 transition-all">
     <div class="hamburger my-2 md:hidden">
       <i class="fa-solid fa-bars text-lg"></i>
     </div>
@@ -33,12 +33,16 @@
         class="flex flex-col justify-center items-center tracking-widest space-y-6 md:space-y-0 md:flex-row md:space-x-5 lg:space-x-8">
         <li
           class="text-sm md:text-base uppercase hover:text-yellow-200 transition delay-75 ease-in-out border-transparent border-b-2 hover:border-yellow-200">
-          <ax href="#home">home</a>
+          <a href="#home">home</a>
         </li>
         <li
           class="text-sm md:text-base uppercase hover:text-yellow-200 transition-all delay-100 ease-in-out border-transparent border-b-2 hover:border-b-2 hover:border-yellow-200">
           <a href="#projects">projects</a>
         </li>
+        <li
+        class="text-sm md:text-base uppercase hover:text-yellow-200 transition-all delay-100 ease-in-out border-transparent border-b-2 hover:border-b-2 hover:border-yellow-200">
+        <a href="#designs">designs</a>
+      </li>
         <li
           class="text-sm md:text-base uppercase hover:text-yellow-200 transition-all delay-100 ease-in-out border-transparent border-b-2 hover:border-b-2 hover:border-yellow-200">
           <a href="#contact">contact</a>
@@ -48,7 +52,7 @@
   </header>
 
   <!-- == main == -->
-  <main class="relative mx-10 md:mx-28 lg:mx-44 xl:mx-52">
+  <main class="mx-10 md:mx-28 lg:mx-44 xl:mx-52">
     <!-- home section -->
     <section id="home" class="h-screen flex flex-col justify-evenly items-center">
       <!-- icons -->
@@ -116,11 +120,9 @@
       </div>
     </section>
 
-    <!-- projects section -->
-    <section id="projects" class="min-h-screen">
-      <!-- technical projects -->
-      <article class="technical flex flex-col items-center">
-        <div class="technical_heading flex items-center mb-20">
+      <!-- projects -->
+      <section id="projects" class="flex flex-col items-center">
+        <div class="projects_heading flex items-center mb-20">
           <h3 class="font-highlight font-bold text-3xl lg:text-5xl">
             Projects
           </h3>
@@ -130,10 +132,12 @@
         <div class="cards_container grid auto-rows-fr	lg:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-y-10">
           <!-- cards -->
         </div>
-      </article>
-      <img class="my-20 mx-auto" src="./src/images/ribbon.svg" alt=" " />
-      <!-- design projects -->
-      <article class="designs flex flex-col items-center my-20">
+        <img class="my-20 mx-auto" src="./src/images/ribbon.svg" alt=" " />
+      </section>
+
+
+      <!-- designs -->
+      <section id="designs" class="flex flex-col items-center my-20">
         <div class="design_heading flex items-center mb-20">
           <h3 class="font-highlight font-bold text-3xl lg:text-5xl">
             Designs
@@ -144,8 +148,7 @@
         <div class="cards_container grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-10">
           <!-- cards -->
         </div>
-      </article>
-    </section>
+      </section>
   </main>
   <!-- == footer == -->
   <footer id="contact"

@@ -15,15 +15,28 @@ hamburgerIcon.addEventListener("click", () => {
   navbar.classList.toggle("hidden");
 });
 
+const header = document.querySelector("header");
+const body = document.querySelector("body");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > header.offsetHeight + 150) {
+    header.classList.add("scrollon");
+    body.classList.add("scrollon");
+  } else {
+    header.classList.remove("scrollon");
+    body.classList.remove("scrollon");
+  }
+});
+
 // PROJECTS ===============================================
 const sectionProjects = document.querySelector("#projects");
 const techProjects = document.querySelector(".technical");
 const designProjects = document.querySelector(".designs");
-const techCardsContainer = document.querySelector(
-  ".technical .cards_container"
+const projectCardsContainer = document.querySelector(
+  "#projects .cards_container"
 );
 const designCardsContainer = document.querySelector(
-  ".designs .cards_container"
+  "#designs .cards_container"
 );
 const fetchProjects = async function () {
   const data = await fetch("./src/data.json");
@@ -36,7 +49,7 @@ const fetchProjects = async function () {
 
 const loadProjects = function (projectsData) {
   // Add html to DOM
-  techCardsContainer.insertAdjacentHTML(
+  projectCardsContainer.insertAdjacentHTML(
     "afterbegin",
     projectsData
       .map(function (project) {
