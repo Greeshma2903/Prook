@@ -4,37 +4,43 @@
       "name": "portfolio",
       "desc": "A simple portfolio made using HTML, CSS, JavaScript.",
       "link": "https://greeshma-portfolio.netlify.app/",
-      "source": "https://github.com/Greeshma2903/Portfolio"
+      "source": "https://github.com/Greeshma2903/Portfolio",
+      "tags": ["html", "css", "javascript"]
     },
     {
       "name": "links-card",
       "desc": "One place to store all my Social Links: Links Card. (Practice Project)",
       "link": "https://greeshma2903.github.io/links-card/",
-      "source": "https://github.com/Greeshma2903/links-card"
+      "source": "https://github.com/Greeshma2903/links-card",
+      "tags": ["html", "css", "javascript"]
     },
     {
       "name": "eddie-landing-page",
       "desc": "A Simple Landing page for a Company. This site was created as a submission to a DevChallenges challenge.",
       "link": "https://edie-home-page-ivory.vercel.app/",
-      "source": "https://github.com/Greeshma2903/Dev-Challenges/tree/main/edie-homepage-master#edie-homepage"
+      "source": "https://github.com/Greeshma2903/Dev-Challenges/tree/main/edie-homepage-master#edie-homepage",
+      "tags": ["html", "css", "javascript"]
     },
     {
       "name": "one-stop-cs",
       "desc": "A HackNITR Submission. A Team effort to build a Web Solution where we provide a collection of resources for learners.",
       "link": "https://onestopcs.netlify.app/",
-      "source": "https://github.com/Greeshma2903/One-Stop-for-All"
+      "source": "https://github.com/Greeshma2903/One-Stop-for-All",
+      "tags": ["html", "css", "javascript"]
     },
     {
       "name": "tip-calculator",
       "desc": "A Simple Tip Calculator. This is a solution to the Tip calculator app challenge on Frontend Mentor.",
       "link": "https://tip-calculator-app-opal.vercel.app/",
-      "source": "https://github.com/Greeshma2903/tip-calculator-app"
+      "source": "https://github.com/Greeshma2903/tip-calculator-app",
+      "tags": ["html", "css", "javascript"]
     },
     {
       "name": "company-team-page",
       "desc": "A page showing the Team members of a Company. This site was created as a submission to a DevChallenges challenge.",
       "link": "https://my-team-page-tan.vercel.app/",
-      "source": "https://github.com/Greeshma2903/Dev-Challenges/tree/main/my-team-page-master#readme"
+      "source": "https://github.com/Greeshma2903/Dev-Challenges/tree/main/my-team-page-master#readme",
+      "tags": ["html", "css"]
     }
   ],
   "designs": [
