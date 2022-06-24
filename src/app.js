@@ -10,9 +10,8 @@ const hamburgerIcon = document.querySelector(".hamburger");
 hamburgerIcon.addEventListener("click", () => {
   navbar.classList.toggle("hidden");
   navlinks.addEventListener("click", (e) => {
-    if(e.target.tagName.toLowerCase() === "a")
-      navbar.classList.add("hidden");
-  })
+    if (e.target.tagName.toLowerCase() === "a") navbar.classList.add("hidden");
+  });
 });
 
 // Sticky Navbar Implementation ---->
@@ -89,22 +88,32 @@ const filterSelection = async function (tagSelected, sectionName) {
 
   // Hide all cards
   cards.forEach((card) => card.classList.add("hidden"));
+  document.querySelector(`#${sectionName} .cards_container`).style.opacity =
+    "0";
 
-  if (tagSelected !== "all") {
-    let selectedCards = jsonData[`${sectionName}`].reduce((acc, project, i) => {
-      if (project.tags.indexOf(`${tagSelected}`) > -1) acc.push(i);
-      return acc;
-    }, []);
+  // Unhide filtered Cards
+  setTimeout(() => {
+    if (tagSelected !== "all") {
+      let selectedCards = jsonData[`${sectionName}`].reduce(
+        (acc, project, i) => {
+          if (project.tags.indexOf(`${tagSelected}`) > -1) acc.push(i);
+          return acc;
+        },
+        []
+      );
 
-    // Unhide filtered Cards
-    selectedCards.forEach((val) => {
-      document
-        .querySelector(`#${sectionName} .cards_container .card-${val}`)
-        .classList.remove("hidden");
-    });
-  } else {
-    cards.forEach((card) => card.classList.remove("hidden"));
-  }
+      selectedCards.forEach((val) =>
+        document
+          .querySelector(`#${sectionName} .cards_container .card-${val}`)
+          .classList.remove("hidden")
+      );
+    } else {
+      cards.forEach((card) => card.classList.remove("hidden"));
+    }
+
+    document.querySelector(`#${sectionName} .cards_container`).style.opacity =
+      "1";
+  }, 300);
 };
 
 // Projects ---->
@@ -121,7 +130,7 @@ const loadProjectHTML = function (projectsData) {
         );
 
         return `
-        <div class="card card-${index} group drop-shadow-xl bg-CardBg rounded-md px-6 py-4 border-transparent transition-all duration-100 ease-linear hover:outline-gray-500 hover:outline hover:outline-2 grid grid-rows-cardGrid items-start gap-y-3">        
+        <div class="card card-${index} group drop-shadow-xl bg-CardBg rounded-md px-6 py-4 border-transparent hover:outline-gray-500 hover:outline hover:outline-2 grid grid-rows-cardGrid items-start gap-y-3">        
           <div class="card_tags flex justify-start">
             ${tags.join("")}
           </div>
