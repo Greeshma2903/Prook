@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth scroll-pt-32">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,16 +39,16 @@
   </head>
 
   <body
-    class="container mx-auto min-h-screen bg-DarkBg text-slate-50 font-body"
+    class="container mx-auto min-h-screen bg-DarkBg text-slate-50 font-body relative scroll-smooth scroll-pt-32"
   >
     <!-- == header == -->
     <header
-      class="flex flex-col justify-center items-center md:flex-row w-full py-6 xl:py-10 z-50 transition-all"
+      class="flex flex-col justify-center items-center md:flex-row py-6 xl:py-10 z-50 transition-all relative"
     >
-      <div class="hamburger my-2 md:hidden">
+      <div class="hamburger my-2 md:hidden hover:rotate-12">
         <i class="fa-solid fa-bars text-lg"></i>
       </div>
-      <nav class="my-2 hidden overflow-hidden md:block md:w-full">
+      <nav class="py-2 absolute top-full md:static hidden overflow-hidden md:block bg-DarkBg w-full border-b-2 border-gray-500 md:border-none">
         <ul
           class="flex flex-col justify-center items-center tracking-widest space-y-6 md:space-y-0 md:flex-row md:space-x-5 lg:space-x-8"
         >
@@ -81,7 +81,7 @@
       <!-- home section -->
       <section
         id="home"
-        class="h-screen flex flex-col justify-evenly items-center"
+        class="min-h-screen flex flex-col justify-evenly items-center"
       >
         <!-- icons -->
         <div
@@ -211,7 +211,7 @@
 
         <div class="relative">
           <div class="w-14 absolute -left-8 -top-6">
-            <img class="object-contain" src="./src/images/arrow.svg" alt=" " />
+            <img class="object-contain select-none" src="./src/images/arrow.svg" alt=" " />
           </div>
           <p class="font-highlight text-lg lg:text-xl animate-pulse">scroll</p>
         </div>
@@ -230,9 +230,11 @@
           />
         </div>
         <!-- filter projects -->
-        <div class="projects_filter flex">
+        <div
+          class="projects_filter flex flex-wrap justify-center items-center space-x-4"
+        >
           <button
-            class="active uppercase rounded text-teal-400 text-sm px-3 py-1 mx-2 border-2 border-teal-400"
+            class="uppercase rounded text-sm text-teal-400 px-3 my-2 border-2 border-teal-400"
             role="button"
           >
             all
@@ -257,9 +259,11 @@
             alt=" "
           />
         </div>
-        <div class="designs_filter flex">
+        <div
+          class="designs_filter flex flex-wrap justify-center items-center space-x-4"
+        >
           <button
-            class="active uppercase rounded text-teal-400 text-sm px-3 py-1 mx-2 border-2 border-teal-400"
+            class="uppercase rounded text-sm text-teal-400 px-3 my-2 border-2 border-teal-400"
             role="button"
           >
             all
@@ -267,7 +271,7 @@
         </div>
         <!-- card container-->
         <div
-          class="cards_container grid md:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-10"
+          class="cards_container grid lg:grid-cols-2 xl:grid-cols-3 gap-x-14 gap-y-10"
         >
           <!-- cards -->
         </div>

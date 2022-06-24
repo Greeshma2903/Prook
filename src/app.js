@@ -3,11 +3,16 @@
 // NAVBAR =================================================
 const header = document.querySelector("header");
 const navbar = document.querySelector("nav");
+const navlinks = document.querySelector("nav ul");
 const hamburgerIcon = document.querySelector(".hamburger");
 
 // Mobile hamburger Menu ---->
 hamburgerIcon.addEventListener("click", () => {
   navbar.classList.toggle("hidden");
+  navlinks.addEventListener("click", (e) => {
+    if(e.target.tagName.toLowerCase() === "a")
+      navbar.classList.add("hidden");
+  })
 });
 
 // Sticky Navbar Implementation ---->
@@ -62,7 +67,7 @@ const loadTags = function (projects, sectionName) {
     tagList
       .map((tag) => {
         return `
-      <button class="uppercase rounded text-sm text-teal-400 px-3 mx-2 border-2 border-teal-400" role="button">${tag}</button>
+      <button class="uppercase rounded text-sm text-teal-400 px-3 my-2 border-2 border-teal-400" role="button">${tag}</button>
       `;
       })
       .join("")
@@ -191,7 +196,7 @@ const loadDesignHTML = function (designData) {
         const tags = design.tags
           .map(
             (tag) =>
-              `<button class="bg-teal-400 hover:bg-teal-100 px-2 rounded mr-3 uppercase text-xs text-black font-bold">${tag}</button>`
+              `<button class="bg-teal-400 hover:bg-teal-100 px-2 my-2 rounded mr-3 uppercase text-xs text-black font-bold">${tag}</button>`
           )
           .join("");
 

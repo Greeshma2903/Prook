@@ -5,12 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* scroll behavior */
-body, html {
-  scroll-behavior: smooth;
-  scroll-padding: 5rem;
-}
-
 /* customize scroll bar */
 html::-webkit-scrollbar {
     width: 8px; 
@@ -27,11 +21,7 @@ html::-webkit-scrollbar-thumb {
 
 /* nav on scroll */
 header.scrollon {
-  @apply py-2 shadow-sm shadow-neutral-700 fixed bg-DarkBg;
-}
-
-main.scrollon {
-  @apply mt-20;
+  @apply py-2 md:py-4 shadow-sm shadow-neutral-700 fixed bg-DarkBg left-0 right-0 top-0;
 }
 
 button.active {

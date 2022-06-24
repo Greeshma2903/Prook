@@ -557,6 +557,10 @@ video {
   position: relative;
 }
 
+.top-full{
+  top: 100%;
+}
+
 .-top-28{
   top: -7rem;
 }
@@ -601,11 +605,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -645,10 +644,6 @@ video {
 
 .hidden{
   display: none;
-}
-
-.h-screen{
-  height: 100vh;
 }
 
 .h-24{
@@ -709,6 +704,17 @@ video {
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.scroll-pt-32{
+  scroll-padding-top: 8rem;
+}
+
 .auto-rows-fr{
   grid-auto-rows: minmax(0, 1fr);
 }
@@ -719,6 +725,10 @@ video {
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-start{
@@ -789,8 +799,18 @@ video {
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded{
@@ -807,6 +827,11 @@ video {
 
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-gray-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .border-transparent{
@@ -859,14 +884,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .px-2{
@@ -939,10 +964,6 @@ video {
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.lowercase{
-  text-transform: lowercase;
 }
 
 .capitalize{
@@ -1034,13 +1055,6 @@ video {
   transition-timing-function: linear;
 }
 
-/* scroll behavior */
-
-body, html {
-  scroll-behavior: smooth;
-  scroll-padding: 5rem;
-}
-
 /* customize scroll bar */
 
 html::-webkit-scrollbar {
@@ -1060,6 +1074,9 @@ html::-webkit-scrollbar-thumb {
 
 header.scrollon{
   position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
@@ -1071,8 +1088,11 @@ header.scrollon{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-main.scrollon{
-  margin-top: 5rem;
+@media (min-width: 768px){
+  header.scrollon{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 button.active{
@@ -1081,6 +1101,11 @@ button.active{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:rotate-12:hover{
+  --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover{
@@ -1146,6 +1171,10 @@ button.active{
 }
 
 @media (min-width: 768px){
+  .md\:static{
+    position: static;
+  }
+
   .md\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
@@ -1157,14 +1186,6 @@ button.active{
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:w-full{
-    width: 100%;
-  }
-
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -1187,6 +1208,10 @@ button.active{
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:border-none{
+    border-style: none;
+  }
+
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1205,10 +1230,6 @@ button.active{
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
