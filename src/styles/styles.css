@@ -33,3 +33,7 @@ header.scrollon {
 main.scrollon {
   @apply mt-20;
 }
+
+button.active {
+ @apply bg-teal-400 text-black font-bold;
+}

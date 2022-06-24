@@ -9,7 +9,7 @@ Todo
 - [x] Use Tailwind
 - [ ] Gsap animations
 - [ ] Github API
-- [ ] Filtering projects
+- [x] Filtering projects
 - [ ] Scroll to top
 - [ ] Embed Blogs
 ### Figma Design
