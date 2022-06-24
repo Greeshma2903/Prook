@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-32">
+<html lang="en" class="scroll-smooth scroll-pt-24">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,16 +39,18 @@
   </head>
 
   <body
-    class="container mx-auto min-h-screen bg-DarkBg text-slate-50 font-body relative scroll-smooth scroll-pt-32"
+    class="container mx-auto min-h-screen bg-DarkBg text-slate-50 font-body relative scroll-smooth scroll-pt-24"
   >
     <!-- == header == -->
     <header
-      class="flex flex-col justify-center items-center md:flex-row py-6 xl:py-10 z-50 transition-all relative"
+      class="flex flex-col fixed bg-DarkBg left-0 right-0 top-0 justify-center items-center md:flex-row py-2 md:py-4 z-50 transition-all"
     >
       <div class="hamburger my-2 md:hidden hover:rotate-12">
         <i class="fa-solid fa-bars text-lg"></i>
       </div>
-      <nav class="py-2 absolute top-full md:static hidden overflow-hidden md:block bg-DarkBg w-full border-b-2 border-gray-500 md:border-none">
+      <nav
+        class="py-2 absolute top-full md:static hidden overflow-hidden md:block bg-DarkBg w-full border-b-2 border-gray-500 md:border-none"
+      >
         <ul
           class="flex flex-col justify-center items-center tracking-widest space-y-6 md:space-y-0 md:flex-row md:space-x-5 lg:space-x-8"
         >
@@ -81,14 +83,12 @@
       <!-- home section -->
       <section
         id="home"
-        class="min-h-screen flex flex-col justify-evenly items-center"
+        class="min-h-screen flex flex-col justify-around items-center"
       >
         <!-- icons -->
-        <div
-          class="headings relative text-center flex flex-col justify-center items-center"
-        >
+        <div class="headings text-center flex flex-col items-center mt-20">
           <img
-            class="absolute -top-28 left-1/2 -translate-x-1/2 w-20 select-none"
+            class="w-20 mb-8 select-none"
             src="./src/images/shiningEffect.svg"
             alt=" "
           />
@@ -210,7 +210,7 @@
         </div>
 
         <div class="relative">
-          <div class="w-14 absolute -left-8 -top-6  select-none">
+          <div class="w-14 absolute -left-8 -top-6 select-none">
             <img class="object-contain" src="./src/images/arrow.svg" alt=" " />
           </div>
           <p class="font-highlight text-lg lg:text-xl animate-pulse">scroll</p>
@@ -218,7 +218,10 @@
       </section>
 
       <!-- projects -->
-      <section id="projects" class="flex flex-col items-center space-y-10">
+      <section
+        id="projects"
+        class="flex flex-col items-center space-y-10 min-h-screen"
+      >
         <div class="projects_heading flex items-center mb-14">
           <h3 class="font-highlight font-bold text-3xl lg:text-5xl">
             Projects
@@ -246,11 +249,18 @@
         >
           <!-- cards -->
         </div>
-        <img class="my-20 mx-auto select-none" src="./src/images/ribbon.svg" alt=" " />
+        <img
+          class="my-20 mx-auto select-none"
+          src="./src/images/ribbon.svg"
+          alt=" "
+        />
       </section>
 
       <!-- designs -->
-      <section id="designs" class="flex flex-col items-center my-20 space-y-10">
+      <section
+        id="designs"
+        class="flex flex-col items-center space-y-10 min-h-screen"
+      >
         <div class="design_heading flex items-center mb-14">
           <h3 class="font-highlight font-bold text-3xl lg:text-5xl">Designs</h3>
           <img

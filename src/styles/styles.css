@@ -21,7 +21,7 @@ html::-webkit-scrollbar-thumb {
 
 /* nav on scroll */
 header.scrollon {
-  @apply py-2 md:py-4 shadow-sm shadow-neutral-700 fixed bg-DarkBg left-0 right-0 top-0;
+  @apply shadow-sm shadow-neutral-700;
 }
 
 button.active {
