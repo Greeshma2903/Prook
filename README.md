@@ -7,10 +7,9 @@ Todo
 - [x] Figma Design to Code
 - [x] Use Json
 - [x] Use Tailwind
-- [ ] Gsap animations
-- [ ] Github API
 - [x] Filtering projects
-- [ ] Scroll to top
+- [ ] Github API
+- [ ] Gsap animations
 - [ ] Embed Blogs
 ### Figma Design
 
